@@ -272,7 +272,7 @@ async def execute_crawler(_host, _args, logger):
 
 def main(argv=None):
     parser = argparse.ArgumentParser()
-    parser.add_argument("-H", help="iDRAC host address")
+    parser.add_argument("-H", help="iDRAC host address", required=True)
     parser.add_argument("-u", help="iDRAC username", required=True)
     parser.add_argument("-p", help="iDRAC password", required=True)
     parser.add_argument("-v", "--verbose", help="Verbose output", action="store_true")
